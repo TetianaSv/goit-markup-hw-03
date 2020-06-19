@@ -111,14 +111,17 @@ header .adress-tel:focus {
 }
 /* HERO */
 .hero {
-  /* background-color: tomato; */
+  background-color: tomato;
+  /* text-align: center; */
+}
+.hero-content {
   text-align: center;
 }
 .hero-title {
   margin-top: 0px;
   margin-bottom: 30px;
-  /* бэкграунд задала, чтобы было видно белый текст */
-  background-color: #757575;
+  /* бэкграунд задала, чтобы было видно белый текст
+  background-color: #757575; */
   color: var(--white-text);
   font-family: Roboto;
   font-style: normal;
@@ -144,6 +147,10 @@ header .adress-tel:focus {
 }
 /* CHARACTERISTICS SECTION*/
 .feature {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.feature-list {
   display: flex;
   padding-top: 94px;
 }
@@ -153,7 +160,7 @@ header .adress-tel:focus {
 .feature-img img {
   margin-bottom: 30px;
 }
-.feature-list {
+.feature-title {
   margin-top: 0px;
   margin-bottom: 10px;
 
@@ -417,9 +424,15 @@ footer .section {
   padding-bottom: 0px;
 }
 /* PORTFOLIO */
+.filter {
+  /* background-color: tomato; */
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
 .filtr-button {
   padding: 6px 22px;
   background: #f5f4fa;
+  border: transparent;
   border-radius: 4px;
   color: #212121;
   font-family: Roboto;
@@ -431,34 +444,38 @@ footer .section {
 }
 .filtr-menu {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 34px;
+  margin-bottom: 50px;
   justify-content: center;
   /* margin-left: auto;
   margin-right: auto; */
 }
-/* .filter-list {
-  display: block;
-} */
-.filter-list:not(last-child) {
+
+.filter-list:not(:last-child) {
   margin-right: 8px;
 }
-.filtr:hover {
+.filtr-button:hover {
   background-color: #2196f3;
   color: var(--white-text);
 }
-.filtr:focus {
+.filtr-button:focus {
   background-color: #2196f3;
   color: var(--white-text);
 }
 
 .cards {
+  /* background-color: #2196f3; */
   display: flex;
   flex-wrap: wrap;
 }
+.card-img {
+  display: block;
+}
+
 .card-title {
+  display: block;
+  /* background-color: tomato; */
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 4px;
   color: #212121;
   font-family: Roboto;
   font-style: normal;
@@ -478,20 +495,27 @@ footer .section {
   line-height: 30px;
   letter-spacing: 0.03em;
 }
+.card-content {
+  padding: 20px 24px;
+}
 .card-box {
   width: 370px;
   /* width: calc((100%-60px) / 3); */
   margin-right: 30px;
-  padding-bottom: 30px;
   border: 1px solid #eeeeee;
 }
 .card-box:nth-child(3n) {
   margin-right: 0px;
-  padding-bottom: 0px;
+}
+.card-box: nth-last-child(-n + 3) {
+  margin-bottom: 0px;
 }
 
+.card-box a {
+  display: inline-block;
+}
 .card-discription {
-  /* бэкграунд чтобы видеть лого акцент */
+  display: none;
   background-color: #c9c2c2;
   margin-top: 0px;
   margin-bottom: 0px;
