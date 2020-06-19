@@ -152,7 +152,6 @@ header .adress-tel:focus {
 }
 .feature-list {
   display: flex;
-  padding-top: 94px;
 }
 .feature-main:not(:last-child) {
   margin-right: 30px;
@@ -236,12 +235,6 @@ header .adress-tel:focus {
 .team-main {
   padding-top: 94px;
   background-color: #f5f4fa;
-  /* padding-bottom: 94px; */
-  /* margin-bottom: 94px; */
-}
-
-.team-main .section {
-  margin-bottom: 0px;
 }
 .team {
   display: flex;
